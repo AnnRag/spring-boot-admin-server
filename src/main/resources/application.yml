@@ -1,0 +1,12 @@
+server:
+  port: 19090
+spring:
+  security:
+    user:
+      name: admin
+      password: pa$$w0rd
+  boot:
+    admin:
+      client:
+        username: ${spring.security.user.name}
+        password: ${spring.security.user.password}
